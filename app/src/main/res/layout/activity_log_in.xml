@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cars2"
+    tools:context=".LogIn">
+
+    <ImageView
+        android:layout_width="119dp"
+        android:layout_height="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/carlogo" />
+
+    <TextView
+        android:id="@+id/logo_name"
+        style="@style/LogoName"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:fontFamily="@font/chiller"
+        android:text="@string/app_name"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="236dp"
+        android:text="@string/log_in"
+        android:textColor="@color/yellow_accent"
+        android:textSize="16dp"
+        app:fontFamily="@font/roboto" />
+
+    <EditText
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/bottom_line"
+        android:hint="@string/e_mail"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:fontFamily="@font/roboto" />
+
+    <EditText
+        android:layout_width="255dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/bottom_line"
+        android:hint="@string/password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:fontFamily="@font/roboto" />
+
+    <Button
+        style="@style/SignIN"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/logo_name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/logo_name"
+        android:layout_marginBottom="145dp"
+        android:layout_marginEnd="-55dp"
+        android:layout_marginRight="-55dp"
+        android:background="@drawable/rounder_button"
+        android:paddingLeft="7dp"
+        android:text="@string/submit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/yellow_accent"
+        android:textSize="12dp"
+        android:onClick="resetActivityStart"
+        app:fontFamily="@font/roboto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/dont_have_an_account"
+        android:textColor="@color/yellow_accent"
+        android:onClick="SignInActivityStart"
+        android:textSize="12dp"
+        app:fontFamily="@font/roboto" />
+
+</RelativeLayout>
